@@ -23,7 +23,7 @@ Son objectif est de mettre en pratique les différentes notions abordées durant
 ## ✨ Fonctionnalités
 
 - **Visualisations interactives** : graphiques dynamiques permettant d’explorer les tendances de dépenses par période.  
-- **Analyses prédictives** : génération de recommandations personnalisées basées sur l’analyse des données.  
+- **Analyses personnalisées** : génération de recommandations personnalisées basées sur l’analyse des données.  
 - **Filtres personnalisables** : segmentation des données selon différents critères (type de dépense, périodicité, etc.).  
 - **Tableaux de bord** : vue d’ensemble des principaux indicateurs clés.
   
