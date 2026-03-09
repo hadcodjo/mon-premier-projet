@@ -11,7 +11,6 @@ import os
 # ===============================
 # Configure les paramètres de base de la page Streamlit.
 st.set_page_config(
-    page_title="Financial", # Titre affiché dans l'onglet du navigateur
     layout="wide",                     # Utilise une mise en page large pour mieux utiliser l'espace
     initial_sidebar_state="expanded")  # La barre latérale est ouverte par défaut
 
@@ -132,7 +131,7 @@ elif page == "💰 Revenus":
     col_manual, col_import = st.columns([1, 1]) # Deux colonnes pour le layout
 
     with col_manual:
-        st.markdown("#### Ajouter un nouveau revenu manuellement")
+        st.markdown("#### Ajouter un revenu manuellement")
 
         salaire = st.number_input("Salaire mensuel", min_value=0.0, key="salary_input")
         revenu_sup = st.number_input("Revenus supplémentaires", min_value=0.0, key="sup_revenue_input")
@@ -241,12 +240,11 @@ elif page == "📊 Dépenses":
             "Logement",
             "Supermarché",
             "Transport",
-            "Charges",
+            "Autres Charges",
             "Restauration & Divertissement",
             "Études",
             "Santé",
             "Epargnes",
-            "Autres"
         ]
 
         category = st.selectbox("Catégorie", categories, key="manual_category")
@@ -348,7 +346,7 @@ elif page == "📊 Dépenses":
 # ===============================
 
 elif page == "📈 Analyse":
-    st.markdown('<div class="big-title">📈 Analyse</div>', unsafe_allow_html=True)
+    st.markdown('<div class="big-title">📈 Analyses et synthèse</div>', unsafe_allow_html=True)
 
     if not st.session_state.expenses:
         st.warning("Aucune donnée disponible.")
